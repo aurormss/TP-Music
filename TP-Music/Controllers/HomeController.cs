@@ -26,5 +26,19 @@ namespace TP_Music.Controllers
 
             return View();
         }
+
+        public ActionResult Register()
+        {
+            ViewBag.Message = "S'inscrire";
+
+            return View();
+        }
+
+        public ActionResult Login()
+        {
+            ViewBag.Message = "Se connecter";
+
+            return View();
+        }
     }
 }
