@@ -20,5 +20,11 @@ namespace TP_Music.Controllers
             
             return View();
         }
-    }
+		public ActionResult Changermotdepasse()
+		{
+			ViewBag.Message = "Menu Changement de mot de passe";
+
+			return View();
+		}
+	}
 }
