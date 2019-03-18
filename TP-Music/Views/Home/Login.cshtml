@@ -53,15 +53,16 @@
 </style>
 
 <div>
-    <div>
-        <label for="name">Nom de compte :</label>
-        <input type="text" id="nameaccountu" name="user_nameaccountu">
-    </div>
-    <div>
-        <label for="mail">Mot de passe :</label>
-        <input type="text" id="mdp" name="user_mdp">
-    </div>
-    <div>
-        <p><button onclick="location.href='@Url.Action("Menu", "Utilisateur")'" class="btn btn-primary btn-lg">S'inscrire &raquo;</button></p>
-    </div>
+	<div>
+		<label for="name">Nom de compte :</label>
+		<input type="text" id="nameaccountu" name="user_nameaccountu">
+	</div>
+	<div>
+		<label for="mail">Mot de passe :</label>
+		<input type="text" id="mdp" name="user_mdp">
+		<a href="@Url.Action("Changermotdepasse", "Utilisateur")">Mot de passe oublié</a>
+	</div>
+	<div>
+		<p><button onclick="location.href='@Url.Action("Menu", "Utilisateur")'" class="btn btn-primary btn-lg">S'inscrire &raquo;</button></p>
+	</div>
 </div>
